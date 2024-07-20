@@ -1,0 +1,7 @@
+<h1>Health Data</h1>
+<a href="{% url 'health_data_new' %}">Add New Data</a>
+<ul>
+{% for item in data %}
+    <li><a href="{% url 'health_data_detail' pk=item.pk %}">{{ item }}</a></li>
+{% endfor %}
+</ul>

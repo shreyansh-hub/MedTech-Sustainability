@@ -1,0 +1,5 @@
+<h1>{{ data.patient_id }} - {{ data.medication }}</h1>
+<p>Dosage: {{ data.dosage }}</p>
+<p>Date Prescribed: {{ data.date_prescribed }}</p>
+<p>Expiry Date: {{ data.expiry_date }}</p>
+<a href="{% url 'health_data_list' %}">Back to list</a>
